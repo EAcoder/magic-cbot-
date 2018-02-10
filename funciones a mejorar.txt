@@ -1,0 +1,23 @@
+Necesito programador para mejorar este cbot 
+
+que tome como referencia a (BJF forex latency arbitrage EA) 
+
+Pero que:
+
+-Oculte por completo el arbitraje al broker (precio solicitado, sl, tp, duracion del trade...), bueno mas bien que las modifique, mediante un script o algo asi!!! de tal manera que el broker no sepa que estoy utilizando arbitraje. "importante".
+
+-Que tenga una opcion para cambiar el magic number (creo que ya la tiene)
+
+-Que ponga ordenes pendientes (limit orders, FOK,IOC)
+
+-Otra opcion (add on o algo parecido) para emular comercio manual.
+
+-Un money management que calcule automaticamente y en tiempo real la f optima -y la f segura al 22,5% (dos opciones) ademas de las estandar de tamaño fijo y porcentaje del balance
+
+-Con dos alimentadores con FIX API rithmic y lmax
+
+-Que sirva para todos instrumentos, pero sobre todo para forex (18 principales divisas), oro y plata.
+
+-Y que tenga una opcion a parte (add on o algo parecido) para operar automaticamente noticias de forex (las noticias son importantes) casi todo esto es igual que bjf forex latency arbitrage EA.
+
+No creo que sea muy complejo hacerlo e imagino que se podra probar!!! espero respuesta por si tiene alguna duda o recomendacion!!! gracias.
