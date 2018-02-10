@@ -1,0 +1,82 @@
+using System;
+using System.Linq;
+using cAlgo.API;
+using cAlgo.API.Indicators;
+using cAlgo.API.Internals;
+using cAlgo.Indicators;
+
+namespace cAlgo
+{
+    [Robot(TimeZone = TimeZones.UTC, AccessRights = AccessRights.None)]
+    public class scalper : Robot
+    {
+        [Parameter("Symbol", DefaultValue = "EURUSD")]
+        public string FX { get; set; }
+
+        [Parameter("Order Label", DefaultValue = "123456")]
+        public string OrderLabel { get; set; }
+
+        [Parameter("Slippage", DefaultValue = "5")]
+        public int Slippage { get; set; }
+
+        [Parameter("Difference To Open", DefaultValue = 2, MinValue = 2)]
+        public int DiffToOpen { get; set; }
+
+        [Parameter("Max Spread on Slow", DefaultValue = 2.0, MinValue = 2.0)]
+        public double SpreadSlow { get; set; }
+
+        [Parameter("Max Spread On Fast", DefaultValue = 2.0, MinValue = 2.0)]
+        public double SpreadFast { get; set; }
+
+        [Parameter("Use Hidden Stop Loss", DefaultValue = true)]
+        public bool HideSL { get; set; }
+
+        [Parameter("Stop Loss (pips)", DefaultValue = 0, MinValue = 0)]
+        public int StopLoss { get; set; }
+
+        [Parameter("Use Hidden Take Profit", DefaultValue = true)]
+        public bool HideTP { get; set; }
+
+        [Parameter("Take Profit (pips)", DefaultValue = 2, MinValue = 2)]
+        public int TakeProfit { get; set; }
+
+        [Parameter("Trailing Step", DefaultValue = 2, MinValue = 2)]
+        public int TrailStep { get; set; }
+
+        [Parameter("FIX Host name", DefaultValue = "")]
+        public string FixHostName { get; set; }
+
+        [Parameter("FIX Port", DefaultValue = "0000", MinValue = "0000")]
+        public int FixPort { get; set; }
+
+        [Parameter("FIX Account Password", DefaultValue = "Password")]
+        public string FixPW { get; set; }
+
+        [Parameter("FIX Sender Comp ID", DefaultValue = "")]
+        public string FixSendCompID { get; set; }
+
+        [Parameter("FIX Target Comp ID", DefaultValue = "")]
+        public string FixTargetCompID { get; set; }
+
+        [Parameter("FIX SenderSUB ID", DefaultValue = "")]
+        public string FixSenderCompID { get; set; }
+
+
+
+        protected override void OnStart()
+        {
+            // Put your initialization logic here
+        }
+
+        protected override void OnTick()
+        {
+            // Put your core logic here
+        }
+
+        protected override void OnStop()
+        {
+            // Put your deinitialization logic here
+        }
+    }
+}
+
