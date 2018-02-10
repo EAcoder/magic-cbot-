@@ -12,7 +12,7 @@ Pero que:
 
 -Otra opcion (add on o algo parecido) para emular comercio manual.
 
--Un money management que calcule automaticamente y en tiempo real la f optima -y la f segura al 22,5% (dos opciones) ademas de las estandar de tamaño fijo y porcentaje del balance
+-Un money management que calcule automaticamente y en tiempo real la f optima -y la f segura al 22,5% (dos opciones) ademas de las estandar de tamaÃ±o fijo y porcentaje del balance
 
 -Con dos alimentadores con FIX API rithmic y lmax
 
